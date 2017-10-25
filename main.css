@@ -1,0 +1,86 @@
+img {
+    position: fixed;
+    top: 1%;
+    left: 0.5%;
+    width: 4vw;
+    height: 8vh; 
+}
+
+section {
+    position: fixed;
+    border: none; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10vh; 
+}
+
+body {
+    background: url(https://cdn1.savepice.ru/uploads/2017/9/25/756655f98c790d24146d2c0bcfa095ea-full.jpg) no-repeat; 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+t1 {
+    font-size: 2.95vw;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: #00CC00;
+
+}
+
+t2 {
+    font-size: 1.6vw;
+    font-family: Helvetica Narrow, sans-serif;
+    color: black;
+}
+
+t3 {
+    position: fixed;
+    top: 3%;
+    left: 5%;
+    color: white;
+    font-size: 1.5vw;
+    font-family: Helvetica Narrow, sans-serif;
+}
+
+center_text {
+    position: fixed; 
+    left: 8%; 
+    top: 15%; 
+    height: 35vh;
+    width: 35vw;
+    padding: 1.7%; 
+    background: transparent;  
+    border: none;  
+}
+
+.button_1 {
+    position: fixed;
+    top: 1.4%;
+    right: 9.5%;
+    height: 7vh;
+    width: 7.3vw;
+    color: white;
+    background: transparent;
+    border:none;
+    border-radius: 8px;
+    font-size: 1.5vw;
+    font-family: Helvetica Narrow, sans-serif;
+}
+
+.button_2 {
+    position: fixed;
+    top: 1.4%;
+    right: 1.5%;
+    height: 7vh;
+    width: 7.3vw;
+    color: white;
+    background: #00CC00;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5vw;
+    font-family: Helvetica Narrow, sans-serif;
+}
