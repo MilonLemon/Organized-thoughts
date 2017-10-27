@@ -18,14 +18,15 @@ section {
 }
 
 input {
-padding: 12px 20px;
-margin: 8px 0;
-width: 22vw;
-border: 2px solid #ccc;
-border-radius: 8px;
-outline: none;
-font-size: 1vw;
-font-family: Helvetica Narrow, sans-serif;
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: 22vw;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1vw;
+    font-family: Helvetica Narrow, sans-serif;
+    cursor: pointer;
 }
 
 input:focus {
@@ -81,6 +82,11 @@ center_text {
     font-family: Helvetica Narrow, sans-serif;
 }
 
+.button_1:hover{
+    background: rgba(0, 212, 0, 1);
+    cursor: pointer;
+}
+
 .button_2 {
     position: fixed;
     top: 1.4%;
@@ -93,4 +99,9 @@ center_text {
     border-radius: 8px;
     font-size: 1.5vw;
     font-family: Helvetica Narrow, sans-serif;
+}
+
+.button_2:hover{
+    background: rgba(0, 212, 0, 1);
+    cursor: pointer;
 }
