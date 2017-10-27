@@ -84,6 +84,10 @@ t {
     font-family: Helvetica Narrow, sans-serif;
 }  
 
+.button_1:hover {
+    cursor: pointer;
+}
+
 .tasks {
     position: fixed;
     bottom: 72%;
@@ -99,6 +103,7 @@ t {
 
 .tasks:hover {
     background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .tasks_img {
@@ -130,6 +135,7 @@ t1 {
 
 .lists:hover {
     background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .lists_img {
@@ -161,6 +167,7 @@ t2 {
 
 .notes:hover {
     background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .notes_img {
@@ -192,6 +199,7 @@ t3 {
 
 .calendar:hover {
     background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .calendar_img {
@@ -231,6 +239,7 @@ t4 {
 
 .diary:hover {
     background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 t5 {
