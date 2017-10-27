@@ -32,7 +32,7 @@ t1 {
 }
 
 t2 {
-    font-size: 1.6vw;
+    font-size: 1.63vw;
     font-family: Helvetica Narrow, sans-serif;
     color: black;
 }
@@ -52,7 +52,7 @@ center_text {
     top: 15%; 
     height: 35vh;
     width: 35vw;
-    padding: 1.7%; 
+    padding: 1.65%; 
     background: transparent;  
     border: none;  
 }
