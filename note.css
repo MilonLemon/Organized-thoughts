@@ -1,0 +1,267 @@
+img {
+    position: fixed;
+    top: 1%;
+    left: 0.5%;
+    width: 4vw;
+    height: 8vh; 
+}
+
+body {
+    background-color: rgba(220, 218, 219, 1);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.section_1 {
+    position: fixed;
+    border: none; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10vh; 
+}
+
+t {
+    position: fixed;
+    top: 3%;
+    left: 5%;
+    color: white;
+    font-size: 1.5vw;
+    font-family: Helvetica Narrow, sans-serif;
+}
+
+.section_2 {
+    position: fixed;
+    border: none; 
+    background-color: rgba(0, 0, 0, 0.8); 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 20%;
+    height: 90%; 
+}
+
+.section_3 {
+    position: fixed;
+    border: none; 
+    background-color: #00CC00; 
+    bottom: 0;
+    left: 20%;
+    right: 0;
+    width: 0.3%;
+    height: 90%; 
+}
+
+.button_1 {
+    position: fixed;
+    top: 1.4%;
+    right: 1.5%;
+    height: 7vh;
+    width: 7.5vw;
+    color: white;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5vw;
+    font-family: Helvetica Narrow, sans-serif;
+}  
+
+.button_1:hover {
+    cursor: pointer;
+}
+
+.tasks {
+    position: fixed;
+    bottom: 72%;
+    left: 0;
+    height: 18vh;
+    width: 20vw;
+    color: #00CC00;
+    background: transparent;
+    border: none;
+    font-size: 1.5vw;
+    font-family: Helvetica Narrow, sans-serif;
+} 
+
+.tasks:hover {
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.tasks_img {
+    position: fixed;
+    top: 14%;
+    left: 2%;
+    width: 5vw;
+    height: 9vh;
+}
+
+t1 {
+    position: fixed;
+    left: 11.5%;
+    bottom: 79%;
+}
+
+.lists {
+    position: fixed;
+    bottom: 54%;
+    left: 0;
+    height: 18vh;
+    width: 20vw;
+    color: #00CC00;
+    background: transparent;
+    border: none;
+    font-size: 1.5vw;
+    font-family: Helvetica Narrow, sans-serif;
+} 
+
+.lists:hover {
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.lists_img {
+    position: fixed;
+    top: 32%;
+    left: 2%;
+    width: 5vw;
+    height: 9vh;
+}
+
+t2 {
+    position: fixed;
+    left: 12%;
+    bottom: 61%;
+}
+
+.notes {
+    position: fixed;
+    bottom: 36%;
+    left: 0;
+    height: 18vh;
+    width: 20vw;
+    color: #00CC00;
+    background: transparent;
+    border: none;
+    font-size: 1.5vw;
+    font-family: Helvetica Narrow, sans-serif;
+} 
+
+.notes:hover {
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.notes_img {
+    position: fixed;
+    top: 50%;
+    left: 1.5%;
+    width: 6vw;
+    height: 10vh;
+}
+
+t3 {
+    position: fixed;
+    left: 11.5%;
+    bottom: 43%;
+}
+
+.calendar {
+    position: fixed;
+    bottom: 18%;
+    left: 0;
+    height: 18vh;
+    width: 20vw;
+    color: #00CC00;
+    background: transparent;
+    border: none;
+    font-size: 1.5vw;
+    font-family: Helvetica Narrow, sans-serif;
+} 
+
+.calendar:hover {
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.calendar_img {
+    position: fixed;
+    top: 68%;
+    left: 2%;
+    width: 5vw;
+    height: 9vh;
+}
+
+t4 {
+    position: fixed;
+    left: 10.5%;
+    bottom: 25%;
+}
+
+.diary {
+    position: fixed;
+    bottom: 0%;
+    left: 0;
+    height: 18vh;
+    width: 20vw;
+    color: #00CC00;
+    background: transparent;
+    border: none;
+    font-size: 1.5vw;
+    font-family: Helvetica Narrow, sans-serif;
+} 
+
+.diary_img {
+    position: fixed;
+    top: 86%;
+    left: 1.55%;
+    width: 6vw;
+    height: 10vh;
+}
+
+.diary:hover {
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+t5 {
+    position: fixed;
+    left: 11.75%;
+    bottom: 7%;
+} 
+
+t6 {
+    position:fixed;
+    top: 3%;
+    right: 9.8%;
+    font-size: 1.5vw;
+    font-family: Helvetica Narrow, sans-serif;
+    color: white;
+}
+
+t7 {
+    font-size: 2.95vw;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: #00CC00;
+
+}
+
+t8 {
+    font-size: 1.63vw;
+    font-family: Helvetica Narrow, sans-serif;
+    color: black;
+}
+
+center_text {
+    position: fixed; 
+    right: 18%; 
+    top: 38%; 
+    height: 18vh;
+    width: 40vw;
+    padding: 1.7%; 
+    background: transparent;  
+    border: none;  
+}
