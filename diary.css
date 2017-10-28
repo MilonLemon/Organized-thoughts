@@ -207,10 +207,11 @@ t4 {
     height: 18vh;
     width: 20vw;
     color: #00CC00;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.2);
     border: none;
     font-size: 1.5vw;
     font-family: Helvetica Narrow, sans-serif;
+    cursor: pointer;
 } 
 
 .diary_img {
@@ -219,11 +220,6 @@ t4 {
     left: 1.55%;
     width: 6vw;
     height: 10vh;
-}
-
-.diary:hover {
-    background: rgba(0, 0, 0, 0.2);
-    cursor: pointer;
 }
 
 t5 {
@@ -239,29 +235,4 @@ t6 {
     font-size: 1.5vw;
     font-family: Helvetica Narrow, sans-serif;
     color: white;
-}
-
-t7 {
-    font-size: 2.95vw;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
-    color: #00CC00;
-
-}
-
-t8 {
-    font-size: 1.63vw;
-    font-family: Helvetica Narrow, sans-serif;
-    color: black;
-}
-
-center_text {
-    position: fixed; 
-    right: 18%; 
-    top: 38%; 
-    height: 18vh;
-    width: 40vw;
-    padding: 1.7%; 
-    background: transparent;  
-    border: none;  
 }
