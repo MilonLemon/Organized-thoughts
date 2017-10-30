@@ -236,3 +236,21 @@ t6 {
     font-family: Helvetica Narrow, sans-serif;
     color: white;
 }
+
+iframe {
+    position:fixed;
+    width: 79.7%;
+    height: 90%;
+    bottom: 0;
+    left: 20.3%;
+    right: 0;
+}
+
+.st-bg { 
+    border-left:none;
+}
+
+.st-dtitle { 
+    border:none;
+    background:white;
+}
