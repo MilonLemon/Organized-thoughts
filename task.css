@@ -1,4 +1,4 @@
-img {
+.logo {
     position: fixed;
     top: 1%;
     left: 0.5%;
@@ -235,4 +235,39 @@ t6 {
     font-size: 1.5vw;
     font-family: Helvetica Narrow, sans-serif;
     color: white;
+}
+
+.add_task {
+    position: fixed;
+    left: 24.5%;
+    top: 14%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: 70.5vw;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1vw;
+    font-family: Helvetica Narrow, sans-serif;
+    cursor: pointer;
+}
+
+.add_task:focus {
+    border: 2px solid #00CC00;
+}
+
+.button_task {
+    position: fixed;
+    top: 14%;
+    left: 91%;
+    padding: 3px;
+    margin: 8px 0;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.plus {
+    height: 5vh;
 }
