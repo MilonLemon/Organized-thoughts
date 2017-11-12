@@ -236,3 +236,42 @@ t6 {
     font-family: Helvetica Narrow, sans-serif;
     color: white;
 }
+
+textarea { 
+    position: fixed; 
+    width: 70vw; 
+    height: 76vh; 
+    top: 20%; 
+    left: 25%; 
+    padding: 10px 10px; 
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background: white; 
+    resize: none; 
+    outline: none; 
+    font-size: 1vw; 
+    font-family: Helvetica Narrow, sans-serif; 
+    cursor: pointer;
+}
+
+textarea:focus {
+    border: 2px solid #00CC00;
+}
+
+.date {
+    position: fixed;
+    top: 14%;
+    left: 25%; 
+    border: 2px solid #ccc;
+    width: 12vw;
+    background: white; 
+    outline: none; 
+    padding: 4px 10px; 
+    font-size: 1vw; 
+    font-family: Helvetica Narrow, sans-serif; 
+    cursor: pointer;
+}
+
+.date:focus {
+    border: 2px solid #00CC00;
+}
