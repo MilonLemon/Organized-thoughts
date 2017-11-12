@@ -239,11 +239,11 @@ t6 {
 
 .add_task {
     position: fixed;
-    left: 24.5%;
+    left: 24%;
     top: 14%;
     padding: 12px 20px;
     margin: 8px 0;
-    width: 70.5vw;
+    width: 71.5vw;
     border: 2px solid #ccc;
     border-radius: 8px;
     outline: none;
@@ -259,7 +259,7 @@ t6 {
 .button_task {
     position: fixed;
     top: 14%;
-    left: 91%;
+    left: 92%;
     padding: 3px;
     margin: 8px 0;
     background: transparent;
