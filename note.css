@@ -239,7 +239,7 @@ t6 {
 
 .add_note {
     position: fixed;
-    left: 24%;
+    left: 23%;
     top: 14%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -261,7 +261,7 @@ t6 {
 .button_note {
     position: fixed;
     top: 32%;
-    left: 44.5%;
+    left: 43.5%;
     padding: 3px;
     margin: 8px 0;
     background: transparent;
