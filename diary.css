@@ -1,4 +1,4 @@
-img {
+.logo {
     position: fixed;
     top: 1%;
     left: 0.5%;
@@ -261,9 +261,10 @@ textarea:focus {
 .date {
     position: fixed;
     top: 14%;
+    width: 11.5vw;
     left: 25%; 
     border: 2px solid #ccc;
-    width: 12vw;
+    border-radius: 8px;
     background: white; 
     outline: none; 
     padding: 4px 10px; 
@@ -274,4 +275,20 @@ textarea:focus {
 
 .date:focus {
     border: 2px solid #00CC00;
+}
+
+.button_diary {
+    position: fixed;
+    top: 12%;
+    left: 37%;
+    padding: 3px;
+    margin: 8px 0;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.plus {
+    height: 5vh;
 }
