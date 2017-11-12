@@ -1,4 +1,4 @@
-img {
+.logo {
     position: fixed;
     top: 1%;
     left: 0.5%;
@@ -235,4 +235,41 @@ t6 {
     font-size: 1.5vw;
     font-family: Helvetica Narrow, sans-serif;
     color: white;
+}
+
+.add_list {
+    position: fixed;
+    left: 24%;
+    top: 14%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: 15vw;
+    height: 79vh;
+    border: 2px solid #ccc;
+    resize: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1vw;
+    font-family: Helvetica Narrow, sans-serif;
+    cursor: pointer;
+}
+
+.add_list:focus {
+    border: 2px solid #00CC00;
+}
+
+.button_list {
+    position: fixed;
+    top: 86%;
+    left: 35.5%;
+    padding: 3px;
+    margin: 8px 0;
+    background: transparent;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.plus {
+    height: 5vh;
 }
