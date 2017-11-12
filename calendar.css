@@ -236,3 +236,34 @@ t6 {
     font-family: Helvetica Narrow, sans-serif;
     color: white;
 }
+
+table {
+    position: fixed;
+    font-size: 1.5vw;
+    font-family: Helvetica Narrow, sans-serif;
+    color: white;
+    left: 20.3%;
+    width: 60vw;
+    top: 10%;
+    border: none;
+    border-collapse: collapse;
+    background: transparent;
+    text-align: center;
+    padding: none;
+}
+
+textarea {
+    text-align: top;
+    width: 11.21vw;
+    height: 90vh;
+    resize: none;
+    outline:none;
+    border: none;
+    cursor: pointer;
+    font-size: 1vw;
+    font-family: Helvetica Narrow, sans-serif;
+}
+
+.head {
+    height: 5.5vh;
+}
