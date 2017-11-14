@@ -3,17 +3,18 @@ img {
     top: 1%;
     left: 0.5%;
     width: 4vw;
-    height: 8vh;
+    height: 8vh; 
 }
 
 section {
     position: fixed;
-    border: none;
-    background-color: rgba(0, 0, 0, 0.8);
+    border: none; 
+    background-color: rgba(0, 0, 0, 0.8); 
     top: 0;
     left: 0;
+
     right: 0;
-    height: 10vh;
+    height: 10vh; 
 }
 
 input {
@@ -58,14 +59,14 @@ t3 {
 }
 
 center_text {
-    position: fixed;
-    left: 8%;
-    top: 15%;
+    position: fixed; 
+    left: 8%; 
+    top: 15%; 
     height: 26vh;
     width: 22vw;
-    padding: 1.7%;
-    background: transparent;
-    border: none;
+    padding: 1.7%; 
+    background: transparent;  
+    border: none;  
 }
 
 .button_1 {
