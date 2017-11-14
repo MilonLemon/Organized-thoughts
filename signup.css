@@ -18,7 +18,7 @@ section {
 
 input {
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 1vh 0;
     width: 22vw;
     border: 2px solid #ccc;
     border-radius: 8px;
@@ -69,8 +69,8 @@ center_text {
 }
 
 .button_1 {
-    position: fixed;
-    top: 38.6%;
+    position: relative;
+    margin: 1vh 0;
     height: 5.2vh;
     width: 22vw;
     color: white;
