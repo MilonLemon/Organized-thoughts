@@ -3,23 +3,22 @@ img {
     top: 1%;
     left: 0.5%;
     width: 4vw;
-    height: 8vh; 
+    height: 8vh;
 }
 
 section {
     position: fixed;
-    border: none; 
-    background-color: rgba(0, 0, 0, 0.8); 
+    border: none;
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
-
     right: 0;
-    height: 10vh; 
+    height: 10vh;
 }
 
 input {
     padding: 12px 20px;
-    margin: 8px 0;
+    margin: 1vh 0;
     width: 22vw;
     border: 2px solid #ccc;
     border-radius: 8px;
@@ -59,19 +58,19 @@ t3 {
 }
 
 center_text {
-    position: fixed; 
-    left: 8%; 
-    top: 15%; 
+    position: fixed;
+    left: 8%;
+    top: 15%;
     height: 26vh;
     width: 22vw;
-    padding: 1.7%; 
-    background: transparent;  
-    border: none;  
+    padding: 1.7%;
+    background: transparent;
+    border: none;
 }
 
 .button_1 {
-    position: fixed;
-    top: 38.6%;
+    position: relative;
+    margin: 1vh 0;
     height: 5.2vh;
     width: 22vw;
     color: white;
