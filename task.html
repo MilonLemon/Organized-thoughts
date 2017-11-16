@@ -10,11 +10,11 @@
     <section class="section_2"> </section>
     <section class="section_3"> </section>
 
-    <input class="add_task" type="text" name="task" id="task" maxlength="72" placeholder="Add a new task" />
-
-    <form>  
-        <button class="button_task" type="submit" onfocus="this.blur()"> <img class="plus" src="https://cdn1.savepice.ru/uploads/2017/10/31/ca44a0c2fa9dc1a672add9a9e2e8738a-full.png"> </button>
-    </form> 
+    <div class="input_task">
+        <input id="add_task" class="add_task" type="text" maxlength="72" placeholder="Add a new task" />
+        <ul id="ul"> </ul>
+        <span class="button_task" type="submit" onfocus="this.blur()" onclick="newElement()"> <img class="plus" src="https://cdn1.savepice.ru/uploads/2017/10/31/ca44a0c2fa9dc1a672add9a9e2e8738a-full.png"> </button>
+    </div>
 
     <form action="https://milonlemon.github.io/">    
         <button class="button_1" onfocus="this.blur()"> Log Out </button>
@@ -42,5 +42,65 @@
 
     <t> Organized Thoughts </t> 
     <t6 > UserName </t6>
+
+    <script>
+        // Create a "close" button and append it to each list item
+        var myNodelist = document.getElementsByTagName("LI");
+        var i;
+        for (i = 0; i < myNodelist.length; i++) {
+          var span = document.createElement("SPAN");
+          var txt = document.createTextNode("\u00D7");
+          span.className = "close";
+          span.appendChild(txt);
+          myNodelist[i].appendChild(span);
+        }
+        
+        // Click on a close button to hide the current list item
+        var close = document.getElementsByClassName("close");
+        var i;
+        for (i = 0; i < close.length; i++) {
+          close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+          }
+        }
+        
+        // Add a "checked" symbol when clicking on a list item
+        var list = document.querySelector('ul');
+        list.addEventListener('click', function(ev) {
+          if (ev.target.tagName === 'LI') {
+            ev.target.classList.toggle('checked');
+          }
+        }, false);
+        
+        // Create a new list item when clicking on the "Add" button
+        function newElement() {
+          var li = document.createElement("li");
+          var inputValue = document.getElementById("add_task").value;
+          var t = document.createTextNode(inputValue);
+          li.appendChild(t);
+          if (inputValue === '') {
+            alert("You must write something!");
+          } else {
+            document.getElementById("ul").appendChild(li);
+          }
+          document.getElementById("add_task").value = "";
+        
+          var span = document.createElement("SPAN");
+          var txt = document.createTextNode("\u00D7");
+          span.className = "close";
+          span.appendChild(txt);
+          li.appendChild(span);
+        
+          for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+              var div = this.parentElement;
+              div.style.display = "none";
+            }
+          }
+        }
+
+</script>
+
 </body>
 </html>
