@@ -9,11 +9,13 @@
     <section class="section_1"> <img class="logo" src="https://cdn1.savepice.ru/uploads/2017/9/25/1c817cf0c1f873fa5abed9b0bc3f8d70-full.png"> </section>
     <section class="section_2"> </section>
     <section class="section_3"> </section>
-    
-    <form>  
-        <textarea class="add_note" type="text" name="note" id="note" maxlength="200" placeholder="Add a new note"></textarea>
-        <button class="button_note" type="submit" onfocus="this.blur()"> <img class="plus" src="https://cdn1.savepice.ru/uploads/2017/10/31/ca44a0c2fa9dc1a672add9a9e2e8738a-full.png"> </button>
-    </form> 
+
+    <div class="input_note"> 
+      <ul id="ul"> </ul> 
+    </div>
+
+    <textarea id="add_note" class="add_note" type="text" name="note" maxlength="30" placeholder="Add a new note"></textarea>
+    <span class="button_note" type="submit" onfocus="this.blur()" onclick="newElement()"> <img class="plus" src="https://cdn1.savepice.ru/uploads/2017/10/31/ca44a0c2fa9dc1a672add9a9e2e8738a-full.png"> </span>
 
     <form action="https://milonlemon.github.io/">    
         <button class="button_1" onfocus="this.blur()"> Log Out </button>
@@ -41,5 +43,57 @@
 
     <t> Organized Thoughts </t> 
     <t6 > UserName </t6>
+
+    <script>
+        // Create a "close" button and append it to each list item
+        var myNodelist = document.getElementsByTagName("LI");
+        var i;
+        for (i = 0; i < myNodelist.length; i++) {
+          var span = document.createElement("SPAN");
+          var txt = document.createTextNode("\u00D7");
+          span.className = "close";
+          span.appendChild(txt);
+          myNodelist[i].appendChild(span);
+        }
+        
+        // Click on a close button to hide the current list item
+        var close = document.getElementsByClassName("close");
+        var i;
+        for (i = 0; i < close.length; i++) {
+          close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+          }
+        }
+
+        // Create a new list item when clicking on the "Add" button
+        function newElement() {
+          var li = document.createElement("li");
+          var inputValue = document.getElementById("add_note").value;
+          var t = document.createTextNode(inputValue);
+          li.appendChild(t);
+          if (inputValue === '') {
+            alert("You must write something!");
+          } else {
+            document.getElementById("ul").appendChild(li);
+          }
+          document.getElementById("add_note").value = "";
+        
+          var span = document.createElement("SPAN");
+          var txt = document.createTextNode("\u00D7");
+          span.className = "close";
+          span.appendChild(txt);
+          li.appendChild(span);
+        
+          for (i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+              var div = this.parentElement;
+              div.style.display = "none";
+            }
+          }
+        }
+
+</script>
+
 </body>
 </html>
