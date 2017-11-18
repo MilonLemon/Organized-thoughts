@@ -273,3 +273,55 @@ t6 {
 .plus {
     height: 5vh;
 }
+
+.input_note {
+    position: fixed;
+    overflow: auto;
+    width: 79.27vw;
+    height: 57.93vh;
+    top: 42%;
+    left: 20.7%;
+    background: transparent;
+}
+
+li {
+    display: inline-block;
+}
+
+/* Style the list items */
+ul li {
+    position: relative;
+    width: 20.2vw;
+    height: 20.5vh;
+    list-style-type: none;
+    padding: 12px 8px 12px 40px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin: 5px 5px;
+    outline: none;
+    font-size: 1vw;
+    font-family: Helvetica Narrow, sans-serif;
+    cursor: pointer;
+    background: white;
+    user-select: none;
+
+  
+  /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  border-top-right-radius: 8px;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
