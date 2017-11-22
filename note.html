@@ -72,9 +72,17 @@
           var inputValue = document.getElementById("add_note").value;
           var t = document.createTextNode(inputValue);
           li.appendChild(t);
+          var count = 0;
+          for (i = 0; i < inputValue.length; i++) {
+            if (inputValue[i]==' ') count++;
+          }
           if (inputValue === '') {
             alert("You must write something!");
-          } else {
+          } 
+         else if (count === inputValue.length) {
+            alert("You must write something!");
+          }
+          else {
             document.getElementById("ul").appendChild(li);
           }
           document.getElementById("add_note").value = "";
