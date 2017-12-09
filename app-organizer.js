@@ -58,10 +58,8 @@ window.addEventListener('load', function () {
       function displayButtons() {
         if (isAuthenticated()) {
           name.textContent = 'You are logged in!';
-          name.innerHTML = 'You are logged in!';
         } else {
-          name.innerHTML = 'You are not logged in! Please log in to continue.';
-          name.textContent = 'You are not logged in! Please log in to continue.';
+          name.textContent = 'You are not logged in!';
         }
       }
     
