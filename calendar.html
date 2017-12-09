@@ -5,7 +5,20 @@
     <link rel="shortcut icon" href="https://cdn1.savepice.ru/uploads/2017/9/25/1c817cf0c1f873fa5abed9b0bc3f8d70-full.png" type="image/x-icon"> 
     <link rel="stylesheet" href="calendar.css">    
 </head>
-<body>
+<body> 
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCnPwfqD3vpSfBI2rCIi9kqM2JPkWrvg5Q",
+        authDomain: "organized-thoughts.firebaseapp.com",
+        databaseURL: "https://organized-thoughts.firebaseio.com",
+        projectId: "organized-thoughts",
+        storageBucket: "organized-thoughts.appspot.com",
+        messagingSenderId: "285660725186"
+      };
+      firebase.initializeApp(config);
+    </script>
     <section class="section_1"> <img src="https://cdn1.savepice.ru/uploads/2017/9/25/1c817cf0c1f873fa5abed9b0bc3f8d70-full.png"> </section>
     <section class="section_2"> </section>
     <section class="section_3"> </section>   
