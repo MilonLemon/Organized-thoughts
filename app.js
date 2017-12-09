@@ -1,8 +1,6 @@
 window.addEventListener('load', function () {
     var content = document.querySelector('.content');
-    var loadingSpinner = document.getElementById('loading');
-    content.style.display = 'block';
-    loadingSpinner.style.display = 'none';    
+    var loadingSpinner = document.getElementById('loading');    
 
     var webAuth = new auth0.WebAuth({
         domain: 'organizedthoughts.auth0.com',
@@ -11,7 +9,6 @@ window.addEventListener('load', function () {
         audience: 'https://organizedthoughts.auth0.com/userinfo',
         scope: 'openid',
         redirectUri: 'https://milonlemon.github.io/organizer.html?',
-        scope: 'openid',
         leeway: 60
     });
 
