@@ -13,10 +13,7 @@ window.addEventListener('load', function () {
     });
 
     var loginStatus = document.querySelector('.container h4');
-    var loginView = document.getElementById('login-view');
-    var homeView = document.getElementById('home-view');
-
-    var homeViewBtn = document.getElementById('btn-home-view');
+    var name = document.getElementById('name');
     var loginBtn = document.getElementById('btn-login');
     var signupBtn = document.getElementById('btn-signup');
     var logoutBtn = document.getElementById('btn-logout');
@@ -80,12 +77,11 @@ window.addEventListener('load', function () {
         if (isAuthenticated()) {
           loginBtn.style.display = 'none';
           logoutBtn.style.display = 'inline-block';
-          loginStatus.innerHTML = 'You are logged in!';
+          name.textContent = 'You are logged in!';
         } else {
           loginBtn.style.display = 'inline-block';
           logoutBtn.style.display = 'none';
-          loginStatus.innerHTML =
-            'You are not logged in! Please log in to continue.';
+          name.textContent = 'You are not logged in! Please log in to continue.';
         }
       }
     
