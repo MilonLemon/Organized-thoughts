@@ -1,5 +1,4 @@
 <html>
-
 <head>
     <meta charset="utf-8" />
     <title>Organized Thoughts</title>
@@ -7,19 +6,20 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body> 
+<body>
     <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
     <script>
-      var config = {
+        var config = {
         apiKey: "AIzaSyCnPwfqD3vpSfBI2rCIi9kqM2JPkWrvg5Q",
         authDomain: "organized-thoughts.firebaseapp.com",
         databaseURL: "https://organized-thoughts.firebaseio.com",
         projectId: "organized-thoughts",
         storageBucket: "organized-thoughts.appspot.com",
         messagingSenderId: "285660725186"
-      };
-      firebase.initializeApp(config);
+        };
+        firebase.initializeApp(config);
     </script>
+    <script src="https://cdn.auth0.com/js/auth0/8.0/auth0.min.js"></script>    
     <script src="auth0.js"> </script>
     <script src="app.js"> </script>
 
@@ -43,5 +43,4 @@
     </form>
 
 </body>
-
 </html>
