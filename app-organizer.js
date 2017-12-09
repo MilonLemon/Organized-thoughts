@@ -13,7 +13,7 @@ window.addEventListener('load', function () {
     var name = document.getElementById('name');
     var loginBtn = document.getElementById('btn-login');
     var signupBtn = document.getElementById('btn-signup');
-    var logoutBtn1 = document.getElementById('btn-logout');
+    var logoutBtn = document.getElementById('btn-logout');
 
     loginBtn.addEventListener('click', function (e) {
         e.preventDefault();
@@ -73,11 +73,11 @@ window.addEventListener('load', function () {
       function displayButtons() {
         if (isAuthenticated()) {
           loginBtn.style.display = 'none';
-          logoutBtn1.style.display = 'inline-block';
+          logoutBtn.style.display = 'inline-block';
           name.textContent = 'You are logged in!';
         } else {
           loginBtn.style.display = 'inline-block';
-          logoutBtn1.style.display = 'none';
+          logoutBtn.style.display = 'none';
           name.innerHTML = 'You are not logged in! Please log in to continue.';
         }
       }
