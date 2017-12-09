@@ -60,6 +60,7 @@ window.addEventListener('load', function () {
           name.textContent = 'You are logged in!';
         } else {
           name.textContent = 'You are not logged in!';
+          location.href='"https://milonlemon.github.io';
         }
       }
     
