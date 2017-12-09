@@ -6,7 +6,7 @@ window.addEventListener('load', function () {
         responseType: 'token id_token',
         audience: 'https://organizedthoughts.auth0.com/userinfo',
         scope: 'openid',
-        redirectUri: 'https://milonlemon.github.io',
+        redirectUri: 'https://organizedthoughts.auth0.com/v2/logout',
         leeway: 60
     });
 
@@ -60,7 +60,7 @@ window.addEventListener('load', function () {
           name.textContent = 'You are logged in!';
         } else {
           name.textContent = 'You are not logged in!';
-          location.href='"https://milonlemon.github.io';
+          //location.href='"https://milonlemon.github.io';
         }
       }
     
