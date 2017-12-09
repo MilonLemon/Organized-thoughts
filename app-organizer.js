@@ -11,19 +11,7 @@ window.addEventListener('load', function () {
     });
 
     var name = document.getElementById('name');
-    var loginBtn = document.getElementById('btn-login');
-    var signupBtn = document.getElementById('btn-signup');
     var logoutBtn = document.getElementById('btn-logout');
-
-    loginBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        webAuth.authorize();
-    });
-
-    signupBtn.addEventListener('click', function (e) {
-        e.preventDefault();
-        webAuth.authorize();
-    });
 
     logoutBtn.addEventListener('click', logout);
 
