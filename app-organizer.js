@@ -1,6 +1,4 @@
 window.addEventListener('load', function () {
-    var content = document.querySelector('.content');
-    var loadingSpinner = document.getElementById('loading');    
 
     var webAuth = new auth0.WebAuth({
         domain: 'organizedthoughts.auth0.com',
@@ -12,11 +10,10 @@ window.addEventListener('load', function () {
         leeway: 60
     });
 
-    var loginStatus = document.querySelector('.container h4');
     var name = document.getElementById('name');
     var loginBtn = document.getElementById('btn-login');
     var signupBtn = document.getElementById('btn-signup');
-    var logoutBtn = document.getElementById('btn-logout');
+    var logoutBtn1 = document.getElementById('btn-logout');
 
     loginBtn.addEventListener('click', function (e) {
         e.preventDefault();
@@ -76,12 +73,12 @@ window.addEventListener('load', function () {
       function displayButtons() {
         if (isAuthenticated()) {
           loginBtn.style.display = 'none';
-          logoutBtn.style.display = 'inline-block';
+          logoutBtn1.style.display = 'inline-block';
           name.textContent = 'You are logged in!';
         } else {
           loginBtn.style.display = 'inline-block';
-          logoutBtn.style.display = 'none';
-          name.textContent = 'You are not logged in! Please log in to continue.';
+          logoutBtn1.style.display = 'none';
+          name.innerHTML = 'You are not logged in! Please log in to continue.';
         }
       }
     
