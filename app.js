@@ -1,4 +1,6 @@
 window.addEventListener('load', function () {
+    var content = document.querySelector('.content');
+    var loadingSpinner = document.getElementById('loading');    
 
     var webAuth = new auth0.WebAuth({
         domain: 'organizedthoughts.auth0.com',
@@ -6,14 +8,25 @@ window.addEventListener('load', function () {
         responseType: 'token id_token',
         audience: 'https://organizedthoughts.auth0.com/userinfo',
         scope: 'openid',
-        redirectUri: 'https://organizedthoughts.auth0.com/v2/logout',
+        redirectUri: 'https://milonlemon.github.io/organizer.html?',
         leeway: 60
     });
 
-    <script src="https://cdn.auth0.com/js/auth0/8.10.1/auth0.min.js"></script>
-
+    var loginStatus = document.querySelector('.container h4');
     var name = document.getElementById('name');
+    var loginBtn = document.getElementById('btn-login');
+    var signupBtn = document.getElementById('btn-signup');
     var logoutBtn = document.getElementById('btn-logout');
+
+    loginBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        webAuth.authorize();
+    });
+
+    signupBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        webAuth.authorize();
+    });
 
     logoutBtn.addEventListener('click', logout);
 
@@ -25,7 +38,6 @@ window.addEventListener('load', function () {
         localStorage.setItem('access_token', authResult.accessToken);
         localStorage.setItem('id_token', authResult.idToken);
         localStorage.setItem('expires_at', expiresAt);
-        displayButtons();
       }
     
       function logout() {
@@ -33,6 +45,7 @@ window.addEventListener('load', function () {
         localStorage.removeItem('access_token');
         localStorage.removeItem('id_token');
         localStorage.removeItem('expires_at');
+        displayButtons();
       }
     
       function isAuthenticated() {
@@ -41,18 +54,16 @@ window.addEventListener('load', function () {
         var expiresAt = JSON.parse(localStorage.getItem('expires_at'));
         return new Date().getTime() < expiresAt;
       }
-      
-      webAuth.logout({
-        returnTo: 'https://milonlemon.github.io',
-        client_id: 'fY6gtnOhfgomjVsasAL90rKRoNx8a2j0'
-      });
-
+    
       function handleAuthentication() {
         webAuth.parseHash(function(err, authResult) {
           if (authResult && authResult.accessToken && authResult.idToken) {
             window.location.hash = '';
             setSession(authResult);
+            loginBtn.style.display = 'none';
+            homeView.style.display = 'inline-block';
           } else if (err) {
+            homeView.style.display = 'inline-block';
             console.log(err);
             alert(
               'Error: ' + err.error + '. Check the console for further details.'
@@ -64,10 +75,13 @@ window.addEventListener('load', function () {
     
       function displayButtons() {
         if (isAuthenticated()) {
+          loginBtn.style.display = 'none';
+          logoutBtn.style.display = 'inline-block';
           name.textContent = 'You are logged in!';
         } else {
-          name.textContent = 'You are not logged in!';
-          //location.href='"https://milonlemon.github.io';
+          loginBtn.style.display = 'inline-block';
+          logoutBtn.style.display = 'none';
+          name.textContent = 'You are not logged in! Please log in to continue.';
         }
       }
     
