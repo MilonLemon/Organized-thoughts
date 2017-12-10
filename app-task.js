@@ -58,7 +58,7 @@ function handleAuthentication() {
 
 function displayButtons() {
   if (isAuthenticated()) {
-    name.textContent = 'You are logged in!';
+    //name.textContent = 'You are logged in!';
     name.textContent = clientID;
   } else {
     name.textContent = 'You are not logged in!';
