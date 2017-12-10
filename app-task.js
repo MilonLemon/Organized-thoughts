@@ -1,35 +1,26 @@
 window.addEventListener('load', function () {
 
-
 var webAuth = new auth0.WebAuth({
   domain: 'organizedthoughts.auth0.com',
   clientID: 'fY6gtnOhfgomjVsasAL90rKRoNx8a2j0',
   responseType: 'token id_token',
   audience: 'https://organizedthoughts.auth0.com/userinfo',
   scope: 'openid',
+  redirectUri: 'https://milonlemon.github.io',
   leeway: 60
 });
 
 var name = document.getElementById('name');
 var logoutBtn = document.getElementById('btn-logout');
-var taskBtn = document.getElementById('task');
 
 logoutBtn.addEventListener('click', function (e) {
   e.preventDefault();
-
-  webAuth.redirectUri = 'https://milonlemon.github.io';
 
   localStorage.removeItem('access_token');
   localStorage.removeItem('id_token');
   localStorage.removeItem('expires_at');
 
   webAuth.logout();
-});
-
-taskBtn.addEventListener('click', function (e) {
-  e.preventDefault();
-  webAuth.redirectUri = 'https://milonlemon.github.io/task.html';
-  location.href = 'https://milonlemon.github.io/task.html'; 
 });
 
 function setSession(authResult) {
