@@ -6,7 +6,7 @@ var webAuth = new auth0.WebAuth({
   responseType: 'token id_token',
   audience: 'https://organizedthoughts.auth0.com/userinfo',
   scope: 'openid',
-  redirectUri: 'https://organizedthoughts.auth0.com/v2/logout',
+  redirectUri: 'https://milonlemon.github.io',
   leeway: 60
 });
 
