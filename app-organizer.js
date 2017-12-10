@@ -10,6 +10,8 @@ window.addEventListener('load', function () {
         leeway: 60
     });
 
+    <script src="https://cdn.auth0.com/js/auth0/8.10.1/auth0.min.js"></script>
+
     var name = document.getElementById('name');
     var logoutBtn = document.getElementById('btn-logout');
 
@@ -39,7 +41,12 @@ window.addEventListener('load', function () {
         var expiresAt = JSON.parse(localStorage.getItem('expires_at'));
         return new Date().getTime() < expiresAt;
       }
-    
+      
+      webAuth.logout({
+        returnTo: 'https://milonlemon.github.io',
+        client_id: 'fY6gtnOhfgomjVsasAL90rKRoNx8a2j0'
+      });
+
       function handleAuthentication() {
         webAuth.parseHash(function(err, authResult) {
           if (authResult && authResult.accessToken && authResult.idToken) {
