@@ -28,7 +28,7 @@ logoutBtn.addEventListener('click', function (e) {
 
 taskBtn.addEventListener('click', function (e) {
   e.preventDefault();
-  webAuth.redirectUri = 'https://milonlemon.github.io/task.html';
+  //webAuth.redirectUri = 'https://milonlemon.github.io/task.html';
   location.href = 'https://milonlemon.github.io/task.html'; 
 });
 
