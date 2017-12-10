@@ -13,7 +13,15 @@ var webAuth = new auth0.WebAuth({
 var name = document.getElementById('name');
 var logoutBtn = document.getElementById('btn-logout');
 
-logoutBtn.addEventListener('click', logout);
+logoutBtn.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  localStorage.removeItem('access_token');
+  localStorage.removeItem('id_token');
+  localStorage.removeItem('expires_at');
+
+  webAuth.logout();
+});
 
 function setSession(authResult) {
   // Set the time that the access token will expire at
@@ -24,13 +32,6 @@ function setSession(authResult) {
   localStorage.setItem('id_token', authResult.idToken);
   localStorage.setItem('expires_at', expiresAt);
   displayButtons();
-}
-
-function logout() {
-  // Remove tokens and expiry time from localStorage
-  localStorage.removeItem('access_token');
-  localStorage.removeItem('id_token');
-  localStorage.removeItem('expires_at');
 }
 
 function isAuthenticated() {
@@ -60,7 +61,6 @@ function displayButtons() {
     name.textContent = 'You are logged in!';
   } else {
     name.textContent = 'You are not logged in!';
-    //location.href='"https://milonlemon.github.io';
   }
 }
 
